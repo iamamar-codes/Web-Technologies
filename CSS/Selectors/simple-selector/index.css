@@ -1,3 +1,11 @@
 #heading{
     background-color: brown;
 }
+#heading:hover{
+   background-color: blueviolet;
+   font-size: 30px;
+}
+
+.heading{
+    color: aqua;
+}
