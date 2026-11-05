@@ -1,4 +1,4 @@
-/*ID selector*/
+/*ID(id="") selector*/
 #heading{
     background-color: brown;
 }
@@ -7,12 +7,17 @@
    font-size: 30px;
 }
 
-/*class selector*/
-.heading{
+/*class(class="") selector*/
+.class{
     color: aqua;
 }
 
 /*Tag(tagname) selector*/
-h1{
+h4{
     color: blanchedalmond;
+}
+
+/*Grouping(,) selector*/
+u,p{
+    background-color: yellow;
 }
