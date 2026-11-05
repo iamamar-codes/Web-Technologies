@@ -21,3 +21,9 @@ h4{
 u,p{
     background-color: yellow;
 }
+
+
+/*Universalselector*/
+*{
+    background-color: darkseagreen;
+}
