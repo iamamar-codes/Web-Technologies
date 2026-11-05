@@ -1,3 +1,4 @@
+/*ID selector*/
 #heading{
     background-color: brown;
 }
@@ -6,6 +7,12 @@
    font-size: 30px;
 }
 
+/*class selector*/
 .heading{
     color: aqua;
+}
+
+/*Tag(tagname) selector*/
+h1{
+    color: blanchedalmond;
 }
