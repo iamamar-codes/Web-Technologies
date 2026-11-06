@@ -1,3 +1,8 @@
+/* space selector */
 div p{
     color: blueviolet;
+}
+/* child selector */
+div>p{
+    color: brown ;
 }
