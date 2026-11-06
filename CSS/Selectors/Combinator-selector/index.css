@@ -6,3 +6,9 @@ div p{
 div>p{
     color: brown ;
 }
+
+/* general sibling selector */
+div~p{
+    color: aqua;
+    background-color: brown;
+}
