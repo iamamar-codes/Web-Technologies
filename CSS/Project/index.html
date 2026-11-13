@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Form</title>
+  <style>
+
+    h2 {
+      color: darkblue;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    .check-label {
+      font-weight: normal;
+    }
+
+    ul {
+      color: gray;
+    }
+
+    #submit-btn {
+      background-color: green;
+      color: white;
+      cursor: pointer;
+    }
+
+    #register-btn {
+      background-color: lightgray;
+      color: gray;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Registration Form</h2>
+
+  <form>
+    <label for="name">Name</label><br>
+    <input type="text" id="name"><br><br>
+
+    <label for="email">Email</label><br>
+    <input type="email" id="email"><br><br>
+
+    <label for="password">Password</label><br>
+    <input type="password" id="password"><br><br>
+
+    <input type="checkbox">
+    <label for=" " class="check-label">CSS</label>
+
+    <ul>
+      <li>HTML</li>
+      <li>JS</li>
+      <li>React</li>
+    </ul>
+
+    <button type="button" id="submit-btn">Submit</button>
+    <button type="button" id="register-btn" disabled>Register</button>
+  </form>
+
+</body>
+</html>
