@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <meta name="description" content="Personal portfolio" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <a href="#home" class="logo"><span id="logoText">AK</span><i>.</i></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#editing">Editing</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <canvas id="particles"></canvas>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+
+    <div class="hero-inner">
+      <div class="hero-text">
+        <p class="hello"><span class="dot"></span> Available for work</p>
+        <h1>
+          <span class="small">Hi, I'm</span>
+          <span class="name" id="heroName"></span>
+        </h1>
+        <p class="typed-line"><span id="typed"></span><span class="caret">|</span></p>
+        <p class="tagline" id="tagline"></p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn btn-primary">View my work <span>→</span></a>
+          <a href="#contact" class="btn btn-ghost">Contact me</a>
+          <a href="#" class="btn btn-ghost" id="resumeBtn" download hidden>Resume ↓</a>
+        </div>
+      </div>
+
+      <div class="hero-photo">
+        <div class="ring"></div>
+        <div class="ring ring-2"></div>
+        <div class="photo-frame">
+          <img id="photo" alt="Profile photo" />
+          <div class="initials" id="initials"></div>
+        </div>
+        <span class="chip chip-1">Python 🐍</span>
+        <span class="chip chip-2">QA ✓</span>
+        <span class="chip chip-3">SQL</span>
+        <span class="chip chip-4">Video 🎬</span>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-hint" aria-label="Scroll down"><span></span></a>
+  </section>
+
+  <!-- ============ MARQUEE ============ -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track" id="marquee"></div>
+  </div>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about">
+    <p class="eyebrow reveal">01 — About</p>
+    <h2 class="title reveal">A little <em>about me</em></h2>
+    <div class="about-grid">
+      <div class="about-text reveal" id="aboutText"></div>
+      <div class="stats" id="stats"></div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS (React) ============ -->
+  <section class="section" id="skills">
+    <p class="eyebrow reveal">02 — Skills</p>
+    <h2 class="title reveal">Tools I <em>work with</em></h2>
+    <div id="skills-root"></div>
+  </section>
+
+  <!-- ============ PROJECTS (React) ============ -->
+  <section class="section" id="projects">
+    <p class="eyebrow reveal">03 — Projects</p>
+    <h2 class="title reveal">Things I've <em>built</em></h2>
+    <div id="projects-root"><p class="muted">Loading projects… (internet chahiye React load karne ke liye)</p></div>
+  </section>
+
+  <!-- ============ VIDEO EDITING (React) ============ -->
+  <section class="section" id="editing">
+    <p class="eyebrow reveal">04 — Video Editing</p>
+    <h2 class="title reveal">I also <em>edit videos</em></h2>
+    <div id="video-root"></div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section" id="contact">
+    <div class="contact-card reveal">
+      <p class="eyebrow">05 — Contact</p>
+      <h2 class="title">Let's build something <em>together</em></h2>
+      <p class="muted">Have a project or an opportunity? My inbox is always open.</p>
+      <p class="muted" id="location"></p>
+      <a class="btn btn-primary big" id="mailBtn" href="#">Say hello <span>→</span></a>
+      <div class="socials" id="socials"></div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> <span id="footName"></span> · Built with HTML, CSS, JavaScript &amp; React</p>
+    <a href="#home" class="to-top" aria-label="Back to top">↑</a>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.3.1/umd/react.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.3.1/umd/react-dom.production.min.js"></script>
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
