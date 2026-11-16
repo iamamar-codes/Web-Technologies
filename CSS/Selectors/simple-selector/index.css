@@ -14,16 +14,17 @@
 
 /*Tag(tagname) selector*/
 h4{
-    color: blanchedalmond;
+    color:hotpink;
+
 }
 
 /*Grouping(,) selector*/
 u,p{
-    background-color: yellow;
+    background-color:darkorange
 }
 
 
 /*Universal selector*/
 *{
-    background-color: darkseagreen;
+    background-color:yellow
 }

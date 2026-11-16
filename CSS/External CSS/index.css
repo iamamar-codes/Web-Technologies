@@ -5,6 +5,10 @@ h3{
     color: white;
     background-color: green;
 }
+h3:hover{
+    color: black;
+    background-color: brown;
+}
 h4,h5,h6{
     background-color: blueviolet;
 }
