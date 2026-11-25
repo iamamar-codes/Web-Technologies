@@ -4,16 +4,42 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+        body{
+            background-color: powderblue;
+            text-align: center;
+        }
+        .margin{
+            background-color: aqua;
+            margin: 50px auto;
+            padding: 30px;
+            font-weight: bold;
+            width: 350px;
+        }
+        .border{
+            background-color: blueviolet;
+            padding: 30px;
+            border: 2px solid black;
+        }
+        .padding{
+            background-color:green;
+            padding: 30px;
+        }
+        .content{
+            background-color: darkorange;
+            padding: 30px;
+        }
+    </style>
   </head>
   <body>
     <h1>Box Model</h1>
-    <div>
+    <div class="margin">
       Margin
       <div class="border">
         Border
         <div class="padding">
           Padding
-          <div class="content">content</div>
+          <div class="content">Content</div>
         </div>
       </div>
     </div>
