@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 100px;
+            width: 100px;
+            background-color: blueviolet;
+            align-items: center;
+            line-height: 100px;
+            margin: 20px;
+            transition: 1s;
+        }
+        .box1:hover{
+            transform: translate(100px, 50px);
+        }
+        .box2:hover{
+            transform: translatex(50px);
+        }.box3:hover{
+            transform: translatey(50px);
+        }.box4:hover{
+            transform: translate3D(100px, 50px, 40px);
+        }
+    </style>
+</head>
+<body>
+    <h1>Translate</h1>
+    <div class="box box1">Translate</div>
+    <div class="box box2">TranslateX</div>
+    <div class="box box3">TranslateY</div>
+    <div class="box box4">Translate3D</div>
+</body>
+</html>
